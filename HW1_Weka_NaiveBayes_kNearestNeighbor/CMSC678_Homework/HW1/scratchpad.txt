@@ -1,0 +1,10 @@
+k_group = 1
+ACCURACY MATRIX : 
+{'correctPredictions': 478, 'totalTestInstances': 519, 'incorrectPredictions': 41}
+Accuracy: 92.1001926782
+
+
+k_group = 2
+ACCURACY MATRIX : 
+{'correctPredictions': 426, 'totalTestInstances': 519, 'incorrectPredictions': 93}
+Accuracy: 82.0809248555
