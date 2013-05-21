@@ -1,0 +1,93 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3809,         84]
+NotebookOptionsPosition[      3489,         68]
+NotebookOutlinePosition[      3834,         83]
+CellTagsIndexPosition[      3791,         80]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Question 3:", "Subsubsection",
+ CellChangeTimes->{{3.576957310914856*^9, 3.576957313575008*^9}}],
+
+Cell[TextData[{
+ "\tAll Q-learning runs have been conducted using the \[Epsilon]-greedy \
+approach. For all experiments the following parameters are constant:\n\t\t\t",
+ StyleBox["Learning Rate, \[Alpha] = 0.1\n\t\t\tDiscount Rate, \[Gamma] = 0.9\
+\n\t\t\tSampled Episodes = 1,000",
+  FontSlant->"Italic"],
+ "\n\nInitial experiment has been conducted with \[Epsilon] =0 i.e. the next \
+step in each episode is chosen greedily based on expected return the move \
+yields. \[Epsilon] = 0 implies random exploration is done only in case \
+multiple moves yield the same expected return.\n\nThe second experiment has \
+been conducted with \[Epsilon] = 0.1. This implies that 10% of the time the \
+greedy decision based on expected return of a move is not followed and a move \
+other than the greedy decision is randomly selected. This noise introduced in \
+the greedy approach induces random exploration of the neighboring cells in \
+the grid.\n\nThe learning curve for both experiments suggests that although \
+both approaches converge the range of convergence is broader in case of the \
+experiment with induced noise in the decision making. The optimal solution \
+for a 15x15 grid is 28 steps.\n\nIn case of the pure greedy approach the \
+learning algorithm converges in the range of 28-50`ish never settling on 28 \
+since random stepping kicks in every time the Q-values for multiple moves \
+converges on the optimal and mutually equal values. Steadily the new Q-values \
+backup the grid and converge to the optimal relative intervals yielding the \
+optimal value yet again. This beahvior is nearly periodic but does not \
+exhibit symmetry due to random stepping.\n\nIn case of the noise-induced \
+greedy approach the algorithm does converge but within a slightly broader \
+range of 28-70`ish. This is due to noise which induces random movement on the \
+grid irrespective of the optimal move indicated by the corresponding \
+Q-values. Also we notice that this randomness causes the converging learning \
+curve to spend lesser time around the optimal \[OpenCurlyDoubleQuote]28 steps\
+\[CloseCurlyDoubleQuote] value and explore more than the vanilla greedy \
+approach. This increased randomness causes a larger time-span to pass before \
+the optimal relative intervals amongst Q-values are established."
+}], "Text",
+ CellChangeTimes->{
+  3.576957295911998*^9, {3.5769573499170866`*^9, 3.5769577752714157`*^9}, {
+   3.5769581832477503`*^9, 3.576958190745179*^9}, {3.5769583131161785`*^9, 
+   3.5769586088020906`*^9}, {3.5769586401528835`*^9, 3.576958757488595*^9}, {
+   3.5769588150168858`*^9, 3.57695881685299*^9}, {3.5769588612845316`*^9, 
+   3.5769590033916597`*^9}, {3.5769590989231243`*^9, 
+   3.5769591001551943`*^9}, {3.57695913504419*^9, 3.5769593259501095`*^9}},
+ TextJustification->1]
+}, Open  ]]
+},
+WindowSize->{707, 505},
+WindowMargins->{{72, Automatic}, {38, Automatic}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 102, 1, 34, "Subsubsection"],
+Cell[684, 25, 2789, 40, 638, "Text"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

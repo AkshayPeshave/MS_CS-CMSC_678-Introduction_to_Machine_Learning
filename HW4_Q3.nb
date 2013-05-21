@@ -1,0 +1,379 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     14842,        370]
+NotebookOptionsPosition[     14241,        345]
+NotebookOutlinePosition[     14752,        365]
+CellTagsIndexPosition[     14709,        362]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "Question 3:\n\n",
+ StyleBox["1)", "Subsubsection"]
+}], "Subsection",
+ CellChangeTimes->{{3.576931619400385*^9, 3.576931631001049*^9}, {
+  3.5769547488923163`*^9, 3.576954787349516*^9}}],
+
+Cell[TextData[{
+ "P(A \[And] B \[And] C \[And] D \[And] E) = P(E | A \[And] B \[And] C \[And] \
+D) * P(A \[And] B \[And] C \[And] D)\n\t\t\t  = P(E | C) * P(A \[And] B \
+\[And] C \[And] D)\n\t\t\t  = P(E | C) * P(D | A \[And] B \[And] C) * P(A \
+\[And] B \[And] C)\n\t\t\t  = P(E | C) * P(D | A \[And] B) * P(A \[And] B \
+\[And] C)\n\t\t\t  = P(E | C) * P(D | A \[And] B) * P(C | A \[And] B) * P(A \
+\[And] B)\n\t\t\t  = P(E | C) * P(D | A \[And] B) * P(C | A) * P(A \[And] B)\n\
+\t\t\t  ",
+ StyleBox["= P(E | C) * P(D | A \[And] B) * P(C | A) * P(A) * P(B)\n\t\t\t  \n\
+",
+  FontWeight->"Bold"],
+ Cell[BoxData[GridBox[{
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"0", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"}
+   },
+   GridBoxDividers->{
+    "Columns" -> {{True}}, "ColumnsIndexed" -> {}, "Rows" -> {{True}}, 
+     "RowsIndexed" -> {}}]]]
+}], "Text",
+ CellChangeTimes->{{3.5769304616071634`*^9, 3.5769304712967176`*^9}, {
+  3.576930502052477*^9, 3.576930725413252*^9}, {3.5769547698465147`*^9, 
+  3.576954772978694*^9}, {3.5769631134637423`*^9, 3.5769631152018423`*^9}, {
+  3.5769632141795034`*^9, 3.5769632590150676`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2)", "Subsection",
+ CellChangeTimes->{{3.5769547839133196`*^9, 3.5769547845803576`*^9}}],
+
+Cell[TextData[{
+ "P(C=T, D=F) =   ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", GridBox[{
+      {
+       RowBox[{"P", "(", 
+        RowBox[{
+         RowBox[{"C", "=", "T"}], ",", 
+         RowBox[{"D", "=", 
+          RowBox[{
+           RowBox[{"F", " ", "|", " ", "A"}], "=", "T"}]}], ",", " ", 
+         RowBox[{"B", "=", "T"}]}], ")"}]},
+      {"+"},
+      {
+       RowBox[{"P", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"C", "=", "T"}], ",", 
+          RowBox[{"D", "=", 
+           RowBox[{
+            RowBox[{"F", " ", "|", " ", "A"}], "=", "T"}]}], ",", " ", 
+          RowBox[{"B", "=", "F"}]}], ")"}]}]},
+      {"+"},
+      {
+       RowBox[{"P", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"C", "=", "T"}], ",", 
+          RowBox[{"D", "=", 
+           RowBox[{
+            RowBox[{"F", " ", "|", " ", "A"}], "=", "F"}]}], ",", " ", 
+          RowBox[{"B", "=", "T"}]}], ")"}]}]},
+      {"+"},
+      {
+       RowBox[{"P", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"C", "=", "T"}], ",", 
+          RowBox[{"D", "=", 
+           RowBox[{
+            RowBox[{"F", " ", "|", " ", "A"}], "=", "F"}]}], ",", " ", 
+          RowBox[{"B", "=", "F"}]}], ")"}]}]}
+     }], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n\t          \n\t          = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", GridBox[{
+      {
+       RowBox[{
+        RowBox[{"P", "(", 
+         RowBox[{"C", "=", 
+          RowBox[{
+           RowBox[{"T", "|", "A"}], "=", "T"}]}], ")"}], " ", "*", " ", 
+        RowBox[{"P", "(", 
+         RowBox[{
+          RowBox[{"D", "=", 
+           RowBox[{
+            RowBox[{"F", "|", "A"}], "=", "T"}]}], ",", " ", 
+          RowBox[{"B", "=", "T"}]}], ")"}], " ", "*", " ", 
+        RowBox[{"P", "(", 
+         RowBox[{"A", "=", "T"}], ")"}], " ", "*", " ", 
+        RowBox[{"P", "(", 
+         RowBox[{"B", "=", "T"}], ")"}]}]},
+      {"+"},
+      {
+       RowBox[{
+        RowBox[{"P", "(", 
+         RowBox[{"C", "=", 
+          RowBox[{
+           RowBox[{"T", "|", "A"}], "=", "F"}]}], ")"}], " ", "*", " ", 
+        RowBox[{"P", "(", 
+         RowBox[{
+          RowBox[{"D", "=", 
+           RowBox[{
+            RowBox[{"F", "|", "A"}], "=", "T"}]}], ",", " ", 
+          RowBox[{"B", "=", "F"}]}], ")"}], " ", "*", " ", 
+        RowBox[{"P", "(", 
+         RowBox[{"A", "=", "T"}], ")"}], " ", "*", " ", 
+        RowBox[{"P", "(", 
+         RowBox[{"B", "=", "F"}], ")"}]}]},
+      {"+"},
+      {
+       RowBox[{
+        RowBox[{"P", "(", 
+         RowBox[{"C", "=", 
+          RowBox[{
+           RowBox[{"T", "|", "A"}], "=", "T"}]}], ")"}], " ", "*", " ", 
+        RowBox[{"P", "(", 
+         RowBox[{
+          RowBox[{"D", "=", 
+           RowBox[{
+            RowBox[{"F", "|", "A"}], "=", "F"}]}], ",", " ", 
+          RowBox[{"B", "=", "T"}]}], ")"}], " ", "*", " ", 
+        RowBox[{"P", "(", 
+         RowBox[{"A", "=", "F"}], ")"}], " ", "*", " ", 
+        RowBox[{"P", "(", 
+         RowBox[{"B", "=", "T"}], ")"}]}]},
+      {"+"},
+      {
+       RowBox[{
+        RowBox[{"P", "(", 
+         RowBox[{"C", "=", 
+          RowBox[{
+           RowBox[{"T", "|", "A"}], "=", "F"}]}], ")"}], " ", "*", " ", 
+        RowBox[{"P", "(", 
+         RowBox[{
+          RowBox[{"D", "=", 
+           RowBox[{
+            RowBox[{"F", "|", "A"}], "=", "F"}]}], ",", " ", 
+          RowBox[{"B", "=", 
+           RowBox[{"F", " ", "*", " ", 
+            RowBox[{"P", "(", 
+             RowBox[{"A", "=", "F"}], ")"}], " ", "*", " ", 
+            RowBox[{"P", "(", 
+             RowBox[{"B", "=", "F"}], ")"}]}]}]}]}]}]}
+     }], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \n\t          \n\t          =",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{"0.8", "*", "0.3", "*", "0.3", "*", "0.6"}]},
+       {"+"},
+       {
+        RowBox[{"0.8", "*", "0.2", "*", "0.3", "*", "0.4"}]},
+       {"+"},
+       {
+        RowBox[{"0.4", "*", "0.9", "*", "0.7", "*", "0.6"}]},
+       {"+"},
+       {
+        RowBox[{"0.4", "*", "0.8", "*", "0.7", "*", "0.4"}]}
+      }], ")"}]}], TraditionalForm]]],
+ " \n\t          = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", GridBox[{
+      {"0.0432"},
+      {"+"},
+      {"0.1512"},
+      {"+"},
+      {"0.0192"},
+      {"+"},
+      {"0.0896"}
+     }], ")"}], TraditionalForm]]],
+ "\n\t        ",
+ StyleBox["  = 0.3032",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.576930828859169*^9, 3.5769309142450523`*^9}, {
+  3.576930983102991*^9, 3.576931097327524*^9}, {3.576931135038681*^9, 
+  3.5769315569398127`*^9}, {3.57695387198316*^9, 3.576954035335503*^9}, {
+  3.5769540658112464`*^9, 3.576954078441969*^9}, {3.5769543577609453`*^9, 
+  3.576954386802606*^9}, {3.576954468703291*^9, 3.576954522909391*^9}, {
+  3.576954565239812*^9, 3.5769546032809877`*^9}}]
+}, Open  ]]
+},
+WindowSize->{707, 505},
+WindowMargins->{{48, Automatic}, {Automatic, 60}},
+PrintingCopies->1,
+PrintingPageRange->{32000, 32000},
+PrintingOptions->{"Magnification"->1.,
+"PaperOrientation"->"Portrait",
+"PaperSize"->{611.9999999999999, 792.}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 203, 5, 90, "Subsection"],
+Cell[785, 29, 8453, 148, 1383, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9275, 182, 94, 1, 43, "Subsection"],
+Cell[9372, 185, 4853, 157, 604, "Text"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
